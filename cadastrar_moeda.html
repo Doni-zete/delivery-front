@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Gerenciador de Criptomoeda</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><i class="bi bi-list-task"></i></li>
+                <li><i class="bi bi-card-image"></i></li>
+                <li> <i class="bi bi-bell-fill"></i></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>CADASTRO DE MOEDA</h1>
+
+            <form>
+                <div>
+                    <label for="nome">NOME DA MOEDA:</label>
+                    <input type="text" name="nome" id="nome">
+
+                    <label for="descricao">DESCRIÇÃO DA MOEDA:</label>
+                    <input type="text" name="descricao" id="descricao">
+
+                    <label for="token">TIPO:</label>
+                    <input type="radio" name="moedas" id="token"> TOKEN
+                    <input type="radio" name="moedas" id="moeda"> MOEDA
+                    <input type="radio" name="moedas" id="web3"> WEB3
+                    <input type="radio" name="moedas" id="defiance"> DEFIANCE <br>
+
+
+                    <label for="precoCompra">PREÇO COMPRA:</label>
+                    <input type="text" name="precoCompra" id="precoCompra">
+
+                    <label for="precoVenda">PREÇO DE VENDA:</label>
+                    <input type="text" name="precoVenda" id="precoVenda">
+
+                    <button>CADASTRAR MOEDA</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+
+        <footer>
+            <ul>
+                <li>
+                    <a href="#"><i class="bi bi-house-door-fill"></i></a>
+                    <p>MENU</p>
+                </li>
+                <li>
+                    <a href="#"><i class="bi bi-emoji-smile"></i></a>
+                    <p>PERFIL</p>
+                </li>
+                <li>
+                    <a href="#"><i class="bi bi-card-list"></i></a>
+                    <P>MERCADO</P>
+                </li>
+                <li>
+                    <a href="#"><i class="bi bi-envelope"></i></a>
+                    <P>CARTEIRA</P>
+                </li>
+
+            </ul>
+        </footer>
+
+   
+</body>
+
+</html>
