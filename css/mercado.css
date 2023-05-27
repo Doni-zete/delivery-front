@@ -1,0 +1,42 @@
+#conteudo-tabela{
+    padding: 2rem;
+}
+table {
+    width: 90% !important;
+    margin-bottom: .5em;
+    table-layout: fixed;
+    margin:0 auto
+    
+}
+
+h3.titulo {
+    text-align: center;
+    margin: 3rem;
+    justify-content: center;
+    font-size: 25px;
+    color: #305359;
+}
+
+table, th, td, tr {
+    border: 1px #305359 solid;
+    border-collapse: collapse;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto;
+    
+}
+
+tr:hover {
+    background-color: antiquewhite;
+}
+
+
+img {
+    width: 40px;
+    align-items: center;
+}
+
+i.bi-suit-heart-fill {
+    color: red;
+    font-size: 40px;
+}

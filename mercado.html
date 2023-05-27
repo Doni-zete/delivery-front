@@ -6,109 +6,141 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <title>Gerenciador de Criptomoeda</title>
+    <link rel="stylesheet" href="css/style-padrao.css">
+    <link rel="stylesheet" href="css/mercado.css">
+    <title>Mercado Cripto</title>
 </head>
 
 <body>
 
-    <header>
-        <nav>
-            <ul>
-                <li><i class="bi bi-list-task"></i></li>
-                <li><i class="bi bi-card-image"></i></li>
-                <li> <i class="bi bi-bell-fill"></i></li>
+    <header class="cabecalho">
+        <nav class="menu">
+            <ul class="ul-menu">
+                <a href="login.html">
+                    <li><i class="bi bi-person-circle"></i></li>
+                </a>
+                <a href="menu.html">
+                    <li><i class="bi bi-wallet"></i></li>
+                </a>
 
+                <a href="moeda.html">
+                    <li> <i class="bi bi-cart3"></i></li>
+                </a>
             </ul>
+
         </nav>
+
     </header>
 
+
     <main>
-        <section>
-            <h1>MERCADO</h1>
-            <div>
-                <ul>
-                    <li>
-                        <P>NOME MOEDA</P>
-                    </li>
-                    <li><i class="bi bi-balloon-heart"></i></li>
-                    <li>
-                        <p>PREÇO</p>
-                    </li>
-                    <li><i class="bi bi-caret-up-fill"></i></li>
-                </ul>
-            </div>
+        <section id="conteudo-tabela">
+            
+            <h3 class="titulo">MERCADO</h3>
+
+            <table id="tabela-centro">
+                <thead>
+                    <th>SIMBOLO</th>
+                    <th>MOEDA</th>
+                    <th>PREÇO</th>
+                    <th>STATUS</th>
+                    <th>FAVORITO</th>
+                </thead>
+
+                <tbody>
+                    <tr >
+                        <td><img src="https://s2.coinmarketcap.com/static/img/coins/64x64/1.png" alt="" srcset=""></td>
+                        <td>Bitcoin</td>
+                        <td>R$233,123.91</td>
+                        <td><i class="bi bi-caret-up-fill"></i>
+                            <p>27.5%</p>
+                        </td>
+                     
+                        <td><i class="bi bi-suit-heart-fill"></i></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png" alt="" srcset="">
+                        </td>
+                        <td>Ethereum</td>
+                        <td>R$13,123.91</td>
+                        <td><i class="bi bi-caret-up-fill"></i>
+                            <p>2.5%</p>
+                        </td>
+                        <td><i class="bi bi-suit-heart-fill"></i></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://s2.coinmarketcap.com/static/img/coins/64x64/1839.png" alt=""></td>
+                        <td>Binance</td>
+                        <td>R$3,123.91</td>
+                        <td><i class="bi bi-caret-up-fill"></i>
+                            <p>91.1%</p>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://s2.coinmarketcap.com/static/img/coins/64x64/2.png" alt="" srcset=""></td>
+                        <td>Litecoin</td>
+                        <td>R$123.91</td>
+                        <td><i class="bi bi-caret-up-fill"></i>
+                            <p>3.5%</p>
+                        </td>
+                        <td><i class="bi bi-suit-heart-fill"></i></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://s2.coinmarketcap.com/static/img/coins/64x64/131.png" alt=""></td>
+                        <td>Dash</td>
+                        <td>R$1,123.91</td>
+                        <td><i class="bi bi-caret-up-fill"></i>
+                            <p>4.5%</p>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://s2.coinmarketcap.com/static/img/coins/64x64/1567.png" alt=""></td>
+                        <td>Nano</td>
+                        <td>R$523.91</td>
+                        <td><i class="bi bi-caret-up-fill"></i>
+                            <p>105.5%</p>
+                        </td>
+                        <td><i class="bi bi-suit-heart-fill"></i></td>
+                    </tr>
 
 
-            <div>
-                <ul>
-                    <li>
-                        <P>NOME MOEDA</P>
-                    </li>
-                    <li>
-                        <p>PREÇO</p>
-                    </li>
-                    <li><i class="bi bi-caret-up-fill"></i></li>
-                </ul>
-            </div>
+                </tbody>
+            </table>
 
-
-            <div>
-                <ul>
-                    <li>
-                        <P>NOME MOEDA</P>
-                    </li>
-                    <li><i class="bi bi-balloon-heart"></i></li>
-                    <li>
-                        <p>PREÇO</p>
-                    </li>
-                    <li><i class="bi bi-caret-up-fill"></i></li>
-                </ul>
-            </div>
-
-            <div>
-                <ul>
-                    <li>
-                        <P>NOME MOEDA</P>
-                    </li>
-                    <li>
-                        <p>PREÇO</p>
-                    </li>
-                    <li><i class="bi bi-caret-up-fill"></i></li>
-                </ul>
-            </div>
-
-            <div>
-                <ul>
-                    <li>
-                        <P>NOME MOEDA</P>
-                    </li>
-                    <li>
-                        <p>PREÇO</p>
-                    </li>
-                    <li><i class="bi bi-caret-up-fill"></i></li>
-                </ul>
-            </div>
         </section>
     </main>
 
-    <footer>
-        <ul>
-            <li>
-                <a href="#"><i class="bi bi-house-door-fill"></i></a>
-                <p>MENU</p>
-            </li>
-            <li>
-                <a href="#"><i class="bi bi-emoji-smile"></i></a>
-                <p>PERFIL</p>
-            </li>
-            <li>
-                <a href="#"><i class="bi bi-card-list"></i></a>
-                <P>MERCADO</P>
-            </li>
-            <li>
-                <a href="#"><i class="bi bi-envelope"></i></a>
-                <P>CARTEIRA</P>
-            </li>
+    <footer id="footer" class="footer-rodape">
+        <ul class="footer-card">
+            <a href="menu.html">
+                <li class="footer-item">
+                    <i class="bi bi-house-door-fill"></i>
+                    <p class="footer-nome-item">MENU</p>
+                </li>
+            </a>
+
+            <a href="cadastrar_usuario.html">
+                <li class="footer-item">
+                    <i class="bi bi-emoji-smile"></i>
+                    <p class="footer-nome-item">CADASTRO USUARIO</p>
+                </li>
+            </a>
+
+            <a href="mercado.html">
+                <li class="footer-item">
+                    <i class="bi bi-card-list"></i>
+                    <p class="footer-nome-item">MERCADO</p>
+                </li>
+            </a>
+
+            <a href="carteira.html">
+                <li class="footer-item">
+                    <i class="bi bi-envelope"></i>
+                    <p class="footer-nome-item">CARTEIRA</p>
+                </li>
+            </a>
 
         </ul>
     </footer>

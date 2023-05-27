@@ -6,82 +6,113 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <title>Gerenciador de Criptomoeda</title>
+    <link rel="stylesheet" href="css/style-padrao.css">
+    <link rel="stylesheet" href="css/cadastrar.css">
+    <link rel="stylesheet" href="css/moeda.css">
+    <title>Cadastrar Moeda</title>
 </head>
 
 <body>
 
-    <header>
-        <nav>
-            <ul>
-                <li><i class="bi bi-list-task"></i></li>
-                <li><i class="bi bi-card-image"></i></li>
-                <li> <i class="bi bi-bell-fill"></i></li>
+    <header class="cabecalho">
+        <nav class="menu">
+            <ul class="ul-menu">
+                <a href="login.html">
+                    <li><i class="bi bi-person-circle"></i></li>
+                </a>
+                
+                <a href="menu.html">
+                    <li><i class="bi bi-wallet"></i></li>
+                </a>
 
+                <a href="moeda.html">
+                    <li> <i class="bi bi-cart3"></i></li>
+                </a>
             </ul>
+
         </nav>
+
     </header>
 
     <main>
-        <section>
-            <i class="bi bi-chevron-double-left"></i>
-            <h2>NOME DA MOEDA</h2>
-            <i class="bi bi-balloon-heart"></i>
-            <p>Mussum Ipsum, cacilds vidis litro abertis. Copo furadis é disculpa de bebadis, arcu quam euismod
-                magna.Admodum accumsan disputationi eu sit. Vide electram sadipscing et per.Atirei o pau no gatis, per
-                gatis
-                num morreus.Não sou faixa preta cumpadi, sou preto inteiris, inteiris.</p>
-        </section>
+        <section class="container-centro">
+            <form class="formulario-corpo">
+                <div id="icone-voltar-favorito">
+                    <a href="menu.html">
+                        <i class="bi bi-chevron-double-left"></i>
+                    </a>
+                    <i class="bi bi-suit-heart-fill"></i>
+                </div>
 
 
-        <section>
-            <i class="bi bi-file-image"></i>
-            <div>
-                <i class="bi bi-file-minus"></i>
-                <p>1</p>
-                <i class="bi bi-plus-square"></i>
-            </div>
-        </section>
+                <div>
+                    <h1 class="titulo"> BITCOIN </h1>
+                    <p class="descricao">Mussum Ipsum, cacilds vidis litro abertis. Copo furadis é disculpa de bebadis,
+                        arcu quam euismod
+                        magna.Admodum accumsan disputationi eu sit. Vide electram sadipscing et per.Atirei o pau no
+                        gatis,
+                        per
+                        gatis
+                        num morreus.Não sou faixa preta cumpadi, sou preto inteiris, inteiris.</p>
+                </div>
 
+                <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/1.png" alt="">
 
-        <section>
-            <p>Preço unitario</p>
-            <h3>R$000000,00</h3>
+                <div class="buttom-aumentar-diminuir">
+                    <i class="bi bi-file-minus"></i>
+                    <p class="valor-dinheiro">1</p>
+                    <i class="bi bi-plus-square"></i>
+                </div>
 
-            <p>Preço total</p>
-            <h4>R$000000,00</h4>
-        </section>
+                <p class="preco">Preço Unitario</p>
+                <h3 class="valor-dinheiro">R$ 233.123,91</h3>
 
+                <p class="preco">Preço Total</p>
+                <h3 class="valor-dinheiro">R$ 233.123,91</h3>
 
-        <section>
-            <div>
-                <button>Comprar</button>
-                <button>Vender</button>
-            </div>
-        </section>
+                <div>
+                    <button class="butoom-comprar">Comprar</button>
+                    <button class="butoom-vender">Vender</button>
+                </div>
+
+            </form>
+
     </main>
 
     <footer>
-        <ul>
-            <li>
-                <a href="#"><i class="bi bi-house-door-fill"></i></a>
-                <p>MENU</p>
-            </li>
-            <li>
-                <a href="#"><i class="bi bi-emoji-smile"></i></a>
-                <p>PERFIL</p>
-            </li>
-            <li>
-                <a href="#"><i class="bi bi-card-list"></i></a>
-                <P>MERCADO</P>
-            </li>
-            <li>
-                <a href="#"><i class="bi bi-envelope"></i></a>
-                <P>CARTEIRA</P>
-            </li>
+        <footer id="footer" class="footer-rodape">
+            <ul class="footer-card">
+                <a href="menu.html">
+                    <li class="footer-item">
+                        <i class="bi bi-house-door-fill"></i>
+                        <p class="footer-nome-item">MENU</p>
+                    </li>
+                </a>
 
-        </ul>
-    </footer>
+                <a href="cadastrar_usuario.html">
+                    <li class="footer-item">
+                        <i class="bi bi-emoji-smile"></i>
+                        <p class="footer-nome-item">CADASTRO USUARIO</p>
+                    </li>
+                </a>
+
+                <a href="mercado.html">
+                    <li class="footer-item">
+                        <i class="bi bi-card-list"></i>
+                        <p class="footer-nome-item">MERCADO</p>
+                    </li>
+                </a>
+
+                <a href="carteira.html">
+                    <li class="footer-item">
+                        <i class="bi bi-envelope"></i>
+                        <p class="footer-nome-item">CARTEIRA</p>
+                    </li>
+                </a>
+
+            </ul>
+        </footer>
+
 
 
 </body>

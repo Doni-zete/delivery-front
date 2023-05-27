@@ -1,0 +1,90 @@
+.saldo-centro {
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.saldo{
+    margin: 2rem;
+}
+
+.ul-saldo li {
+    list-style: none;
+    padding: .1rem;
+}
+
+.ul-saldo {
+    border-radius: 2rem;
+    box-shadow: 0 5px 15px;
+    background-color: antiquewhite;
+}
+
+
+h3.titulo {
+    text-align: center;
+    margin: 2rem;
+    justify-content: center;
+    font-size: 27px;
+    color: #305359;
+}
+
+.portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+   
+}
+
+.chart {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.slice {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip: rect(0px, 100px, 200px, 0px);
+}
+
+.btc {
+    background-color: #f59d0e;
+    transform: rotate(0deg);
+}
+
+.eth {
+    background-color: #adb6b0;
+    transform: rotate(120deg);
+}
+
+.nano {
+    background-color: #85c1e9;
+    transform: rotate(240deg);
+}
+
+table, th, td, tr {
+    border: 2px #305359 solid;
+    /* margin: 2rem; */
+    font-size: 20px;
+    border-collapse: collapse;
+    padding: 5px;
+
+}
+
+.btc-porcentagem:hover{
+    background-color: #f59d0e;
+}
+
+.eth-porcentagem:hover{
+    background-color: #adb6b0;
+}
+.nano-porcentagem:hover {
+    background-color: #85c1e9;
+}
+
+
