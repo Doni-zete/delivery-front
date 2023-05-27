@@ -6,72 +6,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <title>Gerenciador de Criptomoeda</title>
+    <link rel="stylesheet" href="css/style-padrao.css">
+    <link rel="stylesheet" href="css/cadastrar.css">
+
+    <title>Cadastro de Usuários</title>
 </head>
 
 <body>
 
-    <header>
-        <nav>
-            <ul>
-                <li><i class="bi bi-list-task"></i></li>
-                <li><i class="bi bi-card-image"></i></li>
-                <li> <i class="bi bi-bell-fill"></i></li>
-
+    <header class="cabecalho">
+        <nav class="menu">
+            <ul class="ul-menu">
+                <a href="login.html">
+                    <li><i class="bi bi-person-circle"></i></li>
+                </a>
+                <a href="menu.html">
+                    <li><i class="bi bi-wallet"></i></li>
+                </a>
+                <a href="moeda.html">
+                    <li> <i class="bi bi-cart3"></i></li>
+                </a>
             </ul>
+
         </nav>
     </header>
 
     <main>
-        <section>
-            <h1>CADASTRO DE USUÁRIO</h1>
+        <section class="container-centro">
 
-            <form>
-                <div>
-                    <label for="nome">NOME:</label>
-                    <input type="text" name="nome" id="nome">
+            <form class="formulario-corpo">
+                <h1 class="titulo">CADASTRO DE USUÁRIO</h1>
 
-                    <label for="email">E-MAIL:</label>
-                    <input type="email" name="email" id="email">
-
-                    <label for="senha">SENHA:</label>
-                    <input type="password" id="senha" name="senha">
-
-                    <label for="repitaSenha">REPITA A SENHA:</label>
-                    <input type="password" id="repitaSenha">
-
-            
-
-                    <button>CADASTRAR USUÁRIO</button>
-
+                <div class="container">
+                    <label for="nome" class="form-label">NOME</label>
+                    <input type="text" name="nome" id="nome" class="form-input">
                 </div>
+
+                <div class="container">
+                    <label for="email" class="form-label">E-MAIL</label>
+                    <input type="email" name="email" id="email" class="form-input" required>
+                </div>
+
+                <div class="container">
+                    <label for="senha" class="form-label">SENHA</label>
+                    <input type="password" id="senha" name="senha" class="form-input">
+                </div>
+
+                <div class="container">
+                    <label for="repitaSenha" class="form-label">REPITA A SENHA</label>
+                    <input type="password" id="repitaSenha" class="form-input">
+                </div>
+
+
+                <button class="form-butoom">CADASTRAR USUÁRIO</button>
+
+                
             </form>
         </section>
 
     </main>
 
-        <footer>
-            <ul>
-                <li>
-                    <a href="#"><i class="bi bi-house-door-fill"></i></a>
-                    <p>HOME</p>
+    <footer id="footer" class="footer-rodape">
+        <ul class="footer-card">
+            <a href="menu.html">
+                <li class="footer-item">
+                    <i class="bi bi-house-door-fill"></i>
+                    <p class="footer-nome-item">MENU</p>
                 </li>
-                <li>
-                    <a href="#"><i class="bi bi-emoji-smile"></i></a>
-                    <p>PERFIL</p>
-                </li>
-                <li>
-                    <a href="#"><i class="bi bi-receipt-cutoff"></i></a>
-                    <P>CUPONS</P>
-                </li>
-                <li>
-                    <a href="#"><i class="bi bi-star"></i></a>
-                    <P>PEDIDOS</P>
-                </li>
+            </a>
 
-            </ul>
-        </footer>
-    
+            <a href="cadastrar_usuario.html">
+                <li class="footer-item">
+                    <i class="bi bi-emoji-smile"></i>
+                    <p class="footer-nome-item">CADASTRO USUARIO</p>
+                </li>
+            </a>
+
+            <a href="mercado.html">
+                <li class="footer-item">
+                    <i class="bi bi-card-list"></i>
+                    <p class="footer-nome-item">MERCADO</p>
+                </li>
+            </a>
+
+            <a href="carteira.html">
+                <li class="footer-item">
+                    <i class="bi bi-envelope"></i>
+                    <p class="footer-nome-item">CARTEIRA</p>
+                </li>
+            </a>
+
+        </ul>
+    </footer>
+
 </body>
 
 </html>

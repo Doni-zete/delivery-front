@@ -6,99 +6,124 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style-padrao.css">
+    
     <title>Gerenciador de Criptomoeda
     </title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><i class="bi bi-list-task"></i></li>
-                <li><i class="bi bi-card-image"></i></li>
-                <li> <i class="bi bi-bell-fill"></i></li>
+   
+    <header class="cabecalho">
+        <nav class="menu">
+            <ul class="ul-menu">
+                <a href="login.html">
+                    <li><i class="bi bi-person-circle"></i></li>
+                </a>
+                <a href="menu.html">
+                    <li><i class="bi bi-wallet"></i></li>
+                </a>
 
+                <a href="moeda.html">
+
+                    <li> <i class="bi bi-cart3"></i></li>
+                </a>
             </ul>
+
         </nav>
+        
     </header>
 
+
     <main>
-        <section>
-            <h1>Gerenciador de Criptomoeda</h1>
-            <h2>Olá, Seja bem-vindo!</h2>
-            <h3>Gerencie seus ativos digitais</h3>
+        <section id="mensagem">
+            <h1 id="nome-empresa">BuyAndHold</h1>
+            <h2 class="mensagem">Olá, Seja bem-vindo!</h2>
+            <h3 class="mensagem">Gerencie seus ativos digitais</h3>
         </section>
 
-        <section>
+        <section id="input">
             <i class="bi bi-search"></i>
-            <input type="text" placeholder="Pesquisar">
+            <input  id="input-text" type="text" placeholder="Pesquisar Criptomoeda">
         </section>
 
 
 
-        <section>
-            <div>
-                <img src="https://png.pngtree.com/png-vector/20190120/ourlarge/pngtree-gallery-vector-icon-png-image_470660.jpg"
+        <section id="cards-moedas">
+            <div class="card-moeda">
+                <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/6403508-online-cripto-exchange-flat-icon-with-editable-facility-vetor.jpg"
                     alt="exemplo">
-                <h3>Transação</h3>
+                <h3 class="nome-da-ocorrencia">Transação</h3>
             </div>
 
-            <div>
-                <img src="https://png.pngtree.com/png-vector/20190120/ourlarge/pngtree-gallery-vector-icon-png-image_470660.jpg"
+            <div class="card-moeda">
+                <img src="https://s2.coinmarketcap.com/static/img/coins/200x200/1567.png"
                     alt="exemplo">
-                <h3>Lançamento</h3>
+                <h3 class="nome-da-ocorrencia">Lançamento</h3>
             </div>
 
-            <div>
-                <img src="https://png.pngtree.com/png-vector/20190120/ourlarge/pngtree-gallery-vector-icon-png-image_470660.jpg"
+            <div class="card-moeda">
+                <img src="https://s2.coinmarketcap.com/static/img/coins/200x200/1027.png"
                     alt="exemplo">
-                <h3>Ganhadores</h3>
+                <h3 class="nome-da-ocorrencia">Ganhadores</h3>
                 <i class="bi bi-caret-up-fill"></i>
             </div>
 
-            <div>
-                <img src="https://png.pngtree.com/png-vector/20190120/ourlarge/pngtree-gallery-vector-icon-png-image_470660.jpg"
+            <div class="card-moeda">
+                <img src="https://s2.coinmarketcap.com/static/img/coins/200x200/74.png"
                     alt="exemplo">
-                <h3>Perdedores</h3>
+                <h3 class="nome-da-ocorrencia">Perdedores</h3>
                 <i class="bi bi-caret-down-fill"></i>
             </div>
 
-            <div>
-                <a href="#">Ver mais <i class="bi bi-chevron-double-right"></i></a>
-            </div>
+            
         </section>
+        <div id="ver-mais">
+            <a href="#">Ver mais <i class="bi bi-chevron-double-right"></i></a>
+        </div>
 
-        <section>
-            <p>AVALIE NOSSO APP</p>
+        <section id="avaliacao">
+            <p id="titulo-avaliacao">AVALIE NOSSO APP</p>
             <i class="bi bi-hand-thumbs-up"></i>
             <i class="bi bi-hand-thumbs-down"></i>
-            <span>Sua avaliação pode gerar cupons</span>
+            <span id="frase-avaliacao">Sua avaliação pode gerar cupons</span>
         </section>
     </main>
 
 
-        <footer>
-            <ul>
-                <li>
-                    <a href="#"><i class="bi bi-house-door-fill"></i></a>
-                    <p>MENU</p>
+    <footer id="footer" class="footer-rodape">
+        <ul class="footer-card">
+            <a href="menu.html">
+                <li class="footer-item">
+                    <i class="bi bi-house-door-fill"></i>
+                    <p class="footer-nome-item">MENU</p>
                 </li>
-                <li>
-                    <a href="#"><i class="bi bi-emoji-smile"></i></a>
-                    <p>PERFIL</p>
-                </li>
-                <li>
-                    <a href="#"><i class="bi bi-card-list"></i></a>
-                    <P>MERCADO</P>
-                </li>
-                <li>
-                    <a href="#"><i class="bi bi-envelope"></i></a>
-                    <P>CARTEIRA</P>
-                </li>
+            </a>
 
-            </ul>
-        </footer>
-   
+            <a href="cadastrar_usuario.html">
+                <li class="footer-item">
+                    <i class="bi bi-emoji-smile"></i>
+                    <p class="footer-nome-item">CADASTRO USUARIO</p>
+                </li>
+            </a>
+
+            <a href="mercado.html">
+                <li class="footer-item">
+                    <i class="bi bi-card-list"></i>
+                    <p class="footer-nome-item">MERCADO</p>
+                </li>
+            </a>
+
+            <a href="carteira.html">
+                <li class="footer-item">
+                    <i class="bi bi-envelope"></i>
+                    <p class="footer-nome-item">CARTEIRA</p>
+                </li>
+            </a>
+
+        </ul>
+    </footer>
+
 
 </body>
 

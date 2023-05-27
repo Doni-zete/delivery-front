@@ -1,0 +1,80 @@
+div#icone-voltar-favorito {
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+i.bi-chevron-double-left{
+    font-size: 50px;
+    color: #EBE09B;
+}
+
+i.bi-suit-heart-fill{
+    font-size: 50px;
+    color: red;
+}
+
+.formulario-corpo {
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 5px 5px;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+
+}
+
+p.descricao{
+    text-align: center; 
+    border-radius: 1rem;
+    width: 500px;
+    align-items: center;
+    padding: 10px;
+    background-color: #EBE09B;
+    text-transform: uppercase;
+    margin: 2rem;
+}
+
+i.bi-file-image{
+    font-size: 90px;
+}
+
+.buttom-aumentar-diminuir{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+
+    margin: 1rem;
+}
+
+.bi-file-minus,.bi-plus-square,.valor-dinheiro{
+   padding: .4rem;
+   text-align: center;
+   font-size: 40px;
+}
+p.preco{
+    font-size: 27px;
+    
+}
+
+.butoom-comprar,.butoom-vender{
+    font-size: 25px;
+    color: white;
+    margin: 2rem;
+    padding: 1.2rem;
+    border-radius: 7px;
+    background-color: #305359;
+    cursor: pointer;
+    border: none;
+}
+
+
+
+.butoom-comprar:hover {
+    background-color: green;
+}
+
+.butoom-vender:hover {
+    background-color: red;
+}
+

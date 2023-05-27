@@ -1,0 +1,87 @@
+h1.titulo {
+    text-align: center;
+    margin: 2rem;
+    justify-content: center;
+    font-size: 30px;
+    color: #305359;
+    ;
+}
+
+.container {
+    margin: 20px;
+}
+
+.container-centro {
+    display: flex;
+    justify-content: center;
+    margin: 70px auto;
+
+}
+
+.container-tipo {
+    flex-wrap: wrap;
+}
+
+input.form-input {
+    justify-content: center;
+
+    padding-left: 80px;
+}
+
+.formulario-corpo {
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 5px 5px;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+
+
+}
+
+input[type=text],
+input[type=number],
+input[type=email],
+input[type=password] {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    width: 80%;
+}
+
+.form-label {
+    font-size: 25px;
+}
+
+.form-input {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form-butoom {
+    font-size: 25px;
+    color: white;
+    margin: 2rem;
+    padding: 1.2rem;
+    border-radius: 7px;
+    background-color: #305359;
+    cursor: pointer;
+    border: none;
+}
+
+.form-butoom:hover {
+    background-color: green;
+
+}
+
+.empresa-logo {
+    text-align: center;
+}
+
+i.bi-wallet2 {
+    font-size: 80px;
+    color: var(--background-bottom);
+
+}

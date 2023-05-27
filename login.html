@@ -6,68 +6,96 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <title>Gerenciador de Criptomoeda</title>
+    <link rel="stylesheet" href="css/style-padrao.css">
+    <link rel="stylesheet" href="css/cadastrar.css">
+
+    <title>Login</title>
 </head>
 
 <body>
-
-
-    <header>
-        <nav>
-            <ul>
-                <li><i class="bi bi-list-task"></i></li>
-                <li><i class="bi bi-card-image"></i></li>
-                <li> <i class="bi bi-bell-fill"></i></li>
-
+    <header class="cabecalho">
+        <nav class="menu">
+            <ul class="ul-menu">
+                <a href="login.html">
+                    <li><i class="bi bi-person-circle"></i></li>
+                </a>
+                <a href="menu.html">
+                    <li><i class="bi bi-wallet"></i></li>
+                </a>
+                <a href="moeda.html">
+                    <li>  <i class="bi bi-cart3"></i></li>
+                </a>
             </ul>
+
         </nav>
+
     </header>
 
 
     <main>
         <section>
-            <h1>NOME EMPRESA</h1>
-            <img src="https://png.pngtree.com/png-vector/20190120/ourlarge/pngtree-gallery-vector-icon-png-image_470660.jpg"
-                alt="">
-        </section>
 
-
-        <section>
-            <div>
-                <label for="login">LOGIN</label>
-                <input type="text" id="login">
-
-                <label for="senha">SENHA</label>
-                <input type="text" id="senha">
-
-                <button>REALIZAR LOGIN</button>
-                <button>CADASTRAR</button>
-
+            <h1 class="titulo">BUYANDHOLD</h1>
+            <div class="empresa-logo">
+                <i class="bi bi-wallet2"></i>
             </div>
         </section>
-    </main>
 
-    <footer>
-        <ul>
-            <li>
-                <a href="#"><i class="bi bi-house-door-fill"></i></a>
-                <p>MENU</p>
-            </li>
-            <li>
-                <a href="#"><i class="bi bi-emoji-smile"></i></a>
-                <p>PERFIL</p>
-            </li>
-            <li>
-                <a href="#"><i class="bi bi-card-list"></i></a>
-                <P>MERCADO</P>
-            </li>
-            <li>
-                <a href="#"><i class="bi bi-envelope"></i></a>
-                <P>CARTEIRA</P>
-            </li>
 
-        </ul>
-    </footer>
+        <main>
+            <section class="container-centro">
+
+                <form class="formulario-corpo">
+                    <h1 class="titulo">LOGIN USUÁRIO</h1>
+
+
+                    <div class="container">
+                        <label for="email" class="form-label">E-MAIL</label>
+                        <input type="email" name="email" id="email" class="form-input" required>
+                    </div>
+
+                    <div class="container">
+                        <label for="senha" class="form-label">SENHA</label>
+                        <input type="password" id="senha" name="senha" class="form-input">
+                    </div>
+                    <button class="form-butoom">ENTRAR</button>
+
+                    </div>
+                </form>
+        </main>
+
+        <footer id="footer" class="footer-rodape">
+            <ul class="footer-card">
+                <a href="menu.html">
+                    <li class="footer-item">
+                        <i class="bi bi-house-door-fill"></i>
+                        <p class="footer-nome-item">MENU</p>
+                    </li>
+                </a>
+
+                <a href="cadastrar_usuario.html">
+                    <li class="footer-item">
+                        <i class="bi bi-emoji-smile"></i>
+                        <p class="footer-nome-item">CADASTRO USUARIO</p>
+                    </li>
+                </a>
+
+                <a href="mercado.html">
+                    <li class="footer-item">
+                        <i class="bi bi-card-list"></i>
+                        <p class="footer-nome-item">MERCADO</p>
+                    </li>
+                </a>
+
+                <a href="carteira.html">
+                    <li class="footer-item">
+                        <i class="bi bi-envelope"></i>
+                        <p class="footer-nome-item">CARTEIRA</p>
+                    </li>
+                </a>
+
+            </ul>
+        </footer>
 
 
 </body>

@@ -6,77 +6,106 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <title>Gerenciador de Criptomoeda</title>
+    <link rel="stylesheet" href="css/style-padrao.css">
+    <link rel="stylesheet" href="css/cadastrar.css">
+    <title>Cadastro de Moedas</title>
 </head>
 
 <body>
 
-    <header>
-        <nav>
-            <ul>
-                <li><i class="bi bi-list-task"></i></li>
-                <li><i class="bi bi-card-image"></i></li>
-                <li> <i class="bi bi-bell-fill"></i></li>
-
+    <header class="cabecalho">
+        <nav class="menu">
+            <ul class="ul-menu">
+                <a href="login.html">
+                    <li><i class="bi bi-person-circle"></i></li>
+                </a>
+                <a href="menu.html">
+                    <li><i class="bi bi-wallet"></i></li>
+                </a>
+          
+                <a href="moeda.html">
+                    <li> <i class="bi bi-cart3"></i></li>
+                </a>
             </ul>
+
         </nav>
+
     </header>
 
     <main>
-        <section>
-            <h1>CADASTRO DE MOEDA</h1>
+        <section class="container-centro">
 
-            <form>
-                <div>
-                    <label for="nome">NOME DA MOEDA:</label>
-                    <input type="text" name="nome" id="nome">
-
-                    <label for="descricao">DESCRIÇÃO DA MOEDA:</label>
-                    <input type="text" name="descricao" id="descricao">
-
-                    <label for="token">TIPO:</label>
-                    <input type="radio" name="moedas" id="token"> TOKEN
-                    <input type="radio" name="moedas" id="moeda"> MOEDA
-                    <input type="radio" name="moedas" id="web3"> WEB3
-                    <input type="radio" name="moedas" id="defiance"> DEFIANCE <br>
-
-
-                    <label for="precoCompra">PREÇO COMPRA:</label>
-                    <input type="text" name="precoCompra" id="precoCompra">
-
-                    <label for="precoVenda">PREÇO DE VENDA:</label>
-                    <input type="text" name="precoVenda" id="precoVenda">
-
-                    <button>CADASTRAR MOEDA</button>
+            <form class="formulario-corpo">
+                <h1 class="titulo">CADASTRO DE MOEDA</h1>
+                
+                <div class="container">
+                    <label for="nome" class="form-label">NOME DA MOEDA</label>
+                    <input type="text" name="nome" id="nome" class="form-input">
                 </div>
+
+                <div class="container">
+                    <label for="descricao" class="form-label">DESCRIÇÃO DA MOEDA</label>
+                    <input type="text" name="descricao" id="descricao" class="form-input">
+                </div>
+
+                <div class="container-tipo">
+                    <label for="token" class="form-label">TIPO</label>  <br>
+                    <input type="radio" name="moedas" id="token" class="form-input"> TOKEN
+                    <input type="radio" name="moedas" id="moeda" class="form-input"> MOEDA
+                    <input type="radio" name="moedas" id="web3" class="form-input"> WEB3
+                    <input type="radio" name="moedas" id="defiance" class="form-input"> DEFIANCE
+                </div>
+
+                <div class="container">
+                    <label for="precoCompra" class="form-label">PREÇO DE COMPRA</label>
+                    <input type="number" name="precoCompra" id="precoCompra" class="form-input">
+                </div>
+
+                <div class="container">
+                    <label for="precoVenda" class="form-label">PREÇO DE VENDA</label>
+                    <input type="number" name="precoVenda" id="precoVenda" class="form-input">
+                </div>
+
+                <button class="form-butoom">CADASTRAR MOEDA</button>
+
             </form>
         </section>
     </main>
 
+    <footer id="footer" class="footer-rodape">
+        <ul class="footer-card">
+            <a href="menu.html">
+                <li class="footer-item">
+                    <i class="bi bi-house-door-fill"></i>
+                    <p class="footer-nome-item">MENU</p>
+                </li>
+            </a>
 
-        <footer>
-            <ul>
-                <li>
-                    <a href="#"><i class="bi bi-house-door-fill"></i></a>
-                    <p>MENU</p>
+            <a href="cadastrar_usuario.html">
+                <li class="footer-item">
+                    <i class="bi bi-emoji-smile"></i>
+                    <p class="footer-nome-item">CADASTRO USUARIO</p>
                 </li>
-                <li>
-                    <a href="#"><i class="bi bi-emoji-smile"></i></a>
-                    <p>PERFIL</p>
-                </li>
-                <li>
-                    <a href="#"><i class="bi bi-card-list"></i></a>
-                    <P>MERCADO</P>
-                </li>
-                <li>
-                    <a href="#"><i class="bi bi-envelope"></i></a>
-                    <P>CARTEIRA</P>
-                </li>
+            </a>
 
-            </ul>
-        </footer>
+            <a href="mercado.html">
+                <li class="footer-item">
+                    <i class="bi bi-card-list"></i>
+                    <p class="footer-nome-item">MERCADO</p>
+                </li>
+            </a>
 
-   
+            <a href="carteira.html">
+                <li class="footer-item">
+                    <i class="bi bi-envelope"></i>
+                    <p class="footer-nome-item">CARTEIRA</p>
+                </li>
+            </a>
+
+        </ul>
+    </footer>
+
+
 </body>
 
 </html>
