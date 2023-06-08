@@ -36,7 +36,7 @@
 
     <main>
         <section class="container-centro">
-            <form class="formulario-corpo">
+            <div class="formulario-corpo">
                 <div id="icone-voltar-favorito">
                     <a href="index.html">
                         <i class="bi bi-chevron-double-left"></i>
@@ -55,66 +55,67 @@
                         gatis
                         num morreus.Não sou faixa preta cumpadi, sou preto inteiris, inteiris.</p>
                 </div>
-
+                
                 <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/1.png" alt="">
 
                 <div class="buttom-aumentar-diminuir">
                     <i class="bi bi-file-minus"></i>
-                    <p class="valor-dinheiro">1</p>
+                    <p class="quantidade-dinheiro">0</p>
                     <i class="bi bi-plus-square"></i>
                 </div>
-
+                
+            
                 <p class="preco">Preço Unitario</p>
-                <h3 class="valor-dinheiro">R$ 233.123,91</h3>
+                <h3 class="valor-dinheiro">R$ 130.106</h3>
 
                 <p class="preco">Preço Total</p>
-                <h3 class="valor-dinheiro">R$ 233.123,91</h3>
+                <h3 id="valor-dinheiro-total">R$ 0</h3>
+                <section id="mensagem-sucesso" class="mensagem-sucesso"></section>
 
                 <div>
-                    <button class="butoom-comprar">Comprar</button>
-                    <button class="butoom-vender">Vender</button>
+                    <button id="butoom-comprar">Comprar</button>
+                    <button id="butoom-vender">Vender</button>
                 </div>
 
-            </form>
-
+        </section>
     </main>
 
-    
-        <footer id="footer" class="footer-rodape">
-            <ul class="footer-card">
-                <a href="index.html">
-                    <li class="footer-item">
-                        <i class="bi bi-house-door-fill"></i>
-                        <p class="footer-nome-item">MENU</p>
-                    </li>
-                </a>
 
-                <a href="cadastrar_usuario.html">
-                    <li class="footer-item">
-                        <i class="bi bi-emoji-smile"></i>
-                        <p class="footer-nome-item">CADASTRO USUARIO</p>
-                    </li>
-                </a>
+    <footer id="footer" class="footer-rodape">
+        <ul class="footer-card">
+            <a href="index.html">
+                <li class="footer-item">
+                    <i class="bi bi-house-door-fill"></i>
+                    <p class="footer-nome-item">MENU</p>
+                </li>
+            </a>
 
-                <a href="mercado.html">
-                    <li class="footer-item">
-                        <i class="bi bi-card-list"></i>
-                        <p class="footer-nome-item">MERCADO</p>
-                    </li>
-                </a>
+            <a href="cadastrar_usuario.html">
+                <li class="footer-item">
+                    <i class="bi bi-emoji-smile"></i>
+                    <p class="footer-nome-item">CADASTRO USUARIO</p>
+                </li>
+            </a>
 
-                <a href="carteira.html">
-                    <li class="footer-item">
-                        <i class="bi bi-envelope"></i>
-                        <p class="footer-nome-item">CARTEIRA</p>
-                    </li>
-                </a>
+            <a href="mercado.html">
+                <li class="footer-item">
+                    <i class="bi bi-card-list"></i>
+                    <p class="footer-nome-item">MERCADO</p>
+                </li>
+            </a>
 
-            </ul>
-        </footer>
+            <a href="carteira.html">
+                <li class="footer-item">
+                    <i class="bi bi-envelope"></i>
+                    <p class="footer-nome-item">CARTEIRA</p>
+                </li>
+            </a>
+
+        </ul>
+    </footer>
 
 
-        <script src="js/script-moeda.js"></script>
+    <script src="js/script-moeda.js"></script>
 </body>
 
 </html>
