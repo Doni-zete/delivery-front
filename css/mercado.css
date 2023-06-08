@@ -40,3 +40,42 @@ i.bi-suit-heart-fill {
     color: red;
     font-size: 40px;
 }
+
+#input-centro{
+    text-align: center;
+    padding: 2rem;
+}
+
+input[type=text],
+input[type=number],
+input[type=email],
+input[type=password] {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    width: 10%;
+}
+
+#botao-inserir{
+    font-size: 20px;
+    color: white;
+    margin: 2rem;
+    padding: 5px;
+    border-radius: 7px;
+    background-color: var(--button-form);
+    cursor: pointer;
+    border: none;  
+}
+
+.botao-remover{
+    font-size: 20px;
+    color: white;
+    margin: 15px;
+    padding: 5px;
+    border-radius: 7px;
+    background-color: var(--button-form-red);
+    cursor: pointer;
+    border: none;  
+}

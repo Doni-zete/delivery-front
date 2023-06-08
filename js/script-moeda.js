@@ -84,9 +84,6 @@ function formataMonetario(valor) {
 }
 
 
-
-
-
 botaoComprar.addEventListener("click", function () {
   document.querySelector("#mensagem-sucesso").insertAdjacentHTML(
     "afterend",

@@ -1,14 +1,19 @@
 let botaoInserir = document.querySelector("#botao-inserir");
 let saldoElement = document.querySelector(".saldo-total");
+let saldoInput = document.querySelector("#input-saldo");
 
-botaoInserir.addEventListener("click", function() {
-  let saldoInput = document.querySelector("#input-saldo").value;
+botaoInserir.addEventListener("click", function () {
+  let numeroDigitado = saldoInput.value;
 
-  saldoElement.textContent = formataMonetario(parseFloat(saldoInput));
+  if (!numeroDigitado || Number.isNaN(numeroDigitado)) {
+    numeroDigitado = 0;
+  }
+
+  saldoElement.textContent = formataMonetario(parseFloat(numeroDigitado));
 
   document.querySelector("#input-saldo").value = "";
 });
 
-function formataMonetario(saldoInput) {
-  return "R$ " + saldoInput.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
+function formataMonetario(valor) {
+  return "R$ " + valor.toLocaleString("pt-BR", { minimumFractionDigits: 2 });
 }

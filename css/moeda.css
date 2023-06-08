@@ -47,10 +47,11 @@ i.bi-file-image {
     margin: 1rem;
 }
 
-.bi-file-minus, .bi-plus-square, .valor-dinheiro, .quantidade-dinheiro,#valor-dinheiro-total {
+.bi-file-minus, .bi-plus-square, .valor-dinheiro, .quantidade-dinheiro, #valor-dinheiro-total {
     padding: .4rem;
     text-align: center;
     font-size: 40px;
+    cursor: pointer;
 }
 
 p.preco {
@@ -76,11 +77,11 @@ p.preco {
 }
 
 #butoom-vender:hover {
-    background-color: red;
+    background-color: var(--button-form-red);
 }
 
 i.color-red {
-    color: red;
+    color: var(--button-form-red);
 }
 
 
@@ -95,18 +96,24 @@ i.color-red {
     padding: 0 8px;
     border-radius: 4px;
     color: #fff;
-
 }
 
-.card-moeda-red{
-    display: flex;
+.card-moeda-red span {
+
     justify-content: center;
     margin-top: 2rem;
     margin: auto;
-    background-color: var(--button-form);
+    background-color: var(--button-form-red);
     font-size: 25px;
     width: fit-content;
     padding: 0 8px;
     border-radius: 4px;
     color: #fff;
+    display: block;
+    white-space: pre-line;
 }
+
+#mensagem-sucesso{
+    padding: 1rem;
+}
+

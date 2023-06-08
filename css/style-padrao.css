@@ -15,6 +15,7 @@ body {
     --cor-da-logo-rodape: #EDD983;
     --background-clean: #EBE09B;
     --button-form:#68D391;
+    --button-form-red: red;
    
 
 }
@@ -119,6 +120,7 @@ section#cards-moedas {
     align-items: center;
     width: 25%;
     align-content: center;
+    cursor: pointer;
 }
 
 h3.nome-da-ocorrencia {
@@ -141,6 +143,7 @@ h3.nome-da-ocorrencia {
     margin: auto;
     justify-content: center;
     padding: .8rem;
+
 }
 
 .card-moeda i {
@@ -148,6 +151,7 @@ h3.nome-da-ocorrencia {
     justify-content: flex-end;
     font-size: 50px;
     padding: .8rem;
+    
 }
 
 
@@ -194,11 +198,13 @@ section#avaliacao {
 .bi-hand-thumbs-up {
     font-size: 40px;
     color: rgb(147, 235, 16);
+    cursor: pointer;
 }
 
 .bi-hand-thumbs-down {
     font-size: 40px;
     color: red;
+    cursor: pointer;
 }
 
 #frase-avaliacao {
@@ -303,7 +309,7 @@ section#avaliacao:hover {
         flex-wrap: wrap;
     }
 
-    div.card-moeda {
+    div.card-moeda{
         width: 100%;
         justify-content: center;
     }
@@ -394,10 +400,7 @@ section#avaliacao:hover {
         flex-wrap: wrap;
     }
 
-    div.card-moeda {
-        width: 100%;
-        justify-content: center;
-    }
+ 
 
     span#frase-avaliacao {
         display: none;
@@ -450,10 +453,6 @@ section#avaliacao:hover {
         flex-wrap: wrap;
     }
 
-    div.card-moeda {
-        width: 100%;
-        justify-content: center;
-    }
 
     span#frase-avaliacao {
         display: none;
