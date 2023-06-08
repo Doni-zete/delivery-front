@@ -20,7 +20,7 @@
                 <a href="login.html">
                     <li><i class="bi bi-person-circle"></i></li>
                 </a>
-                <a href="menu.html">
+                <a href="index.html">
                     <li><i class="bi bi-wallet"></i></li>
                 </a>
                 <a href="moeda.html">
@@ -44,7 +44,7 @@
 
                 <div class="container">
                     <label for="email" class="form-label">E-MAIL</label>
-                    <input type="email" name="email" id="email" class="form-input" required>
+                    <input type="email" name="email" id="email" class="form-input">
                 </div>
 
                 <div class="container">
@@ -58,9 +58,10 @@
                 </div>
 
 
-                <button class="form-butoom">CADASTRAR USUÁRIO</button>
-
+                <button class="form-butoom" type="submit">CADASTRAR</button>
                 
+                <p id="resultado"></p>
+                <section id="mensagem-sucesso" class="mensagem-sucesso"></section>
             </form>
         </section>
 
@@ -68,7 +69,7 @@
 
     <footer id="footer" class="footer-rodape">
         <ul class="footer-card">
-            <a href="menu.html">
+            <a href="index.html">
                 <li class="footer-item">
                     <i class="bi bi-house-door-fill"></i>
                     <p class="footer-nome-item">MENU</p>
@@ -82,10 +83,10 @@
                 </li>
             </a>
 
-            <a href="mercado.html">
+            <a href="favoritas.html">
                 <li class="footer-item">
                     <i class="bi bi-card-list"></i>
-                    <p class="footer-nome-item">MERCADO</p>
+                    <p class="footer-nome-item">FAVORITAS</p>
                 </li>
             </a>
 
@@ -98,7 +99,7 @@
 
         </ul>
     </footer>
-
+    <script src="js/cadastrar_usuario.js"></script>
 </body>
 
 </html>

@@ -21,7 +21,7 @@
 }
 
 
-h3.titulo {
+h3.titulo,.saldo-total {
     text-align: center;
     margin: 2rem;
     justify-content: center;
@@ -88,3 +88,17 @@ table, th, td, tr {
 }
 
 
+#input-saldo, #botao-inserir{
+    width: 100px;
+    margin: 2rem;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#botao-inserir{
+    background-color: var(--button-form);
+    font-size: 18px;
+    text-align: center;
+
+}

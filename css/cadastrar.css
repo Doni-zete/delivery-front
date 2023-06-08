@@ -28,6 +28,14 @@ input.form-input {
     padding-left: 80px;
 }
 
+
+input.quantidade-dinheiro{
+    justify-content: center;
+    width: 50px;
+}
+
+
+
 .formulario-corpo {
     text-align: center;
     border-radius: 1rem;
@@ -66,13 +74,15 @@ input[type=password] {
     margin: 2rem;
     padding: 1.2rem;
     border-radius: 7px;
-    background-color: #305359;
+    background-color: #38A169;
     cursor: pointer;
     border: none;
+    transition: 300ms;
 }
 
+
 .form-butoom:hover {
-    background-color: green;
+    background-color: #48BB78;
 
 }
 
@@ -83,5 +93,19 @@ input[type=password] {
 i.bi-wallet2 {
     font-size: 80px;
     color: var(--background-bottom);
+
+}
+
+.card-teste {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin: auto;
+    background-color: var(--button-form);
+    font-size: 25px;
+    width: fit-content;
+    padding: 0 8px;
+    border-radius: 4px;
+    color: #fff;
 
 }
