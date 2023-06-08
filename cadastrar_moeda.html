@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style-padrao.css">
     <link rel="stylesheet" href="css/cadastrar.css">
+    <link rel="stylesheet" href="css/moeda.css">
     <title>Cadastro de Moedas</title>
 </head>
 
 <body>
-
     <header class="cabecalho">
         <nav class="menu">
             <ul class="ul-menu">
@@ -27,9 +27,7 @@
                     <li> <i class="bi bi-cart3"></i></li>
                 </a>
             </ul>
-
         </nav>
-
     </header>
 
     <main>
@@ -48,14 +46,6 @@
                     <input type="text" name="descricao" id="descricao" class="form-input">
                 </div>
 
-                <div class="container-tipo">
-                    <label for="token" class="form-label">TIPO</label>  <br>
-                    <input type="radio" name="moedas" id="token" class="form-input"> TOKEN
-                    <input type="radio" name="moedas" id="moeda" class="form-input"> MOEDA
-                    <input type="radio" name="moedas" id="web3" class="form-input"> WEB3
-                    <input type="radio" name="moedas" id="defiance" class="form-input"> DEFIANCE
-                </div>
-
                 <div class="container">
                     <label for="precoCompra" class="form-label">PREÇO DE COMPRA</label>
                     <input type="number" name="precoCompra" id="precoCompra" class="form-input">
@@ -66,9 +56,13 @@
                     <input type="number" name="precoVenda" id="precoVenda" class="form-input">
                 </div>
 
-                <button class="form-butoom">CADASTRAR MOEDA</button>
+                <button class="form-butoom" type="submit">CADASTRAR MOEDA</button>
+
+                <p id="resultado"></p>
+                <section id="mensagem-sucesso" class="mensagem-sucesso"></section>
 
             </form>
+
         </section>
     </main>
 
@@ -105,9 +99,6 @@
         </ul>
     </footer>
 
-
-
-    
+    <script src="js/cadastrar_moeda.js"></script>
 </body>
-
 </html>

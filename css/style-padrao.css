@@ -111,7 +111,7 @@ section#cards-moedas {
     display: flex;
 }
 
-.card-moeda {
+.card-moeda, .card-moeda-test  {
     display: block;
     margin: 2rem;
     border-radius: 2rem;
@@ -137,7 +137,7 @@ h3.nome-da-ocorrencia {
     box-shadow: #EBE09B 1px 1px 1px 1px;
 }
 
-.card-moeda img {
+.card-moeda img, .card-moeda-test img {
     width: 75%;
     display: block;
     margin: auto;
@@ -146,7 +146,7 @@ h3.nome-da-ocorrencia {
 
 }
 
-.card-moeda i {
+.card-moeda i, .card-moeda-test i {
     display: flex;
     justify-content: flex-end;
     font-size: 50px;
@@ -309,7 +309,7 @@ section#avaliacao:hover {
         flex-wrap: wrap;
     }
 
-    div.card-moeda{
+    div.card-moeda, div.card-moeda-test{
         width: 100%;
         justify-content: center;
     }
