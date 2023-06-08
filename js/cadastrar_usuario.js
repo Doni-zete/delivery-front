@@ -56,4 +56,6 @@ formularioCadastro.addEventListener("submit", function (event) {
       mensagem.style.display = "none";
     }, 3000);
   }
+  
+  
 });
