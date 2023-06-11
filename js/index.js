@@ -34,7 +34,7 @@ function consultaMoeda() {
           showModal("Valor da CriptoMoeda (" + moeda  + ") " + formatarPreco);
         })
         .catch(function(){
-          showModal("ATENÇÃO\nErro ao consultar valor da moeda!\n Campo de sigla da moeda vazio \n ou incorreto \n Por favor, preencha novamente!!! \n" );
+          showModal("ATENÇÃO\nErro ao consultar valor da moeda!\n O campo sigla moeda esta vazio \n ou incorreto \n Por favor, preencha novamente!!! \n" );
         });
 
         document.querySelector("#input-text").value = "";
