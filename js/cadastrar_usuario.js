@@ -10,52 +10,16 @@ formularioCadastro.addEventListener("submit", function (event) {
   let repitaSenha = document.querySelector("#repitaSenha").value;
 
   if (nome === "" || email === "" || senha === "" || repitaSenha === "") {
-    alert(
-      "Você não preencheu os campos: nome ou email ou senha ou repita senha. Verifique!"
+    showModal(
+      "ATENÇÃO!\nVocê não preencheu os campos:\n Nome ou email ou senha ou repita senha.\n Verifique!"
     );
   } else {
-    let nomeElement = document.createElement("p");
-    nomeElement.textContent = "Nome: " + nome;
-
-    let emailElement = document.createElement("p");
-    emailElement.textContent = "E-mail: " + email;
-
-    let senhaElement = document.createElement("p");
-    senhaElement.textContent = "Senha: " + senha;
-
-    let repitaElement = document.createElement("p");
-    repitaElement.textContent = "Repita Senha: " + repitaSenha;
-
-    resultadoElement.innerHTML = "";
-
-    resultadoElement.appendChild(nomeElement);
-    resultadoElement.appendChild(emailElement);
-    resultadoElement.appendChild(senhaElement);
-    resultadoElement.appendChild(repitaElement);
-
+    
+    showModal("Cadastro efetuado com sucesso");
+    
     document.querySelector("#nome").value = "";
     document.querySelector("#email").value = "";
     document.querySelector("#senha").value = "";
     document.querySelector("#repitaSenha").value = "";
-
-
-  
-    setTimeout(() => {
-        resultadoElement.style.display = "none";
-    }, 3000);
-
-    document.querySelector("#mensagem-sucesso").insertAdjacentHTML(
-      "afterend",
-      `<div class="card-teste">
-          <span>Cadastro efetuado com sucesso</span>
-          </div>
-          `
-    );
-    let mensagem = document.querySelector(".card-teste");
-    setTimeout(() => {
-      mensagem.style.display = "none";
-    }, 3000);
   }
-  
-  
 });

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style-padrao.css">
     <link rel="stylesheet" href="css/cadastrar.css">
     <link rel="stylesheet" href="css/moeda.css">
+    <link rel="stylesheet" href="css/modal.css">
     <title>Cadastro de Moedas</title>
 </head>
 
@@ -32,6 +33,13 @@
 
     <main>
         <section class="container-centro">
+
+            <div id="modal-pesquisar" class="modal">
+                <div class="modal-content">
+                  <span class="fechar"><i class="bi bi-x-square"></i></span>
+                  <p id="modal-texto"></p>
+                </div>
+              </div>
 
             <form class="formulario-corpo">
                 <h1 class="titulo">CADASTRO DE MOEDA</h1>
@@ -100,5 +108,6 @@
     </footer>
 
     <script src="js/cadastrar_moeda.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 </html>

@@ -14,9 +14,9 @@ body {
     --background-bottom: #305359;
     --cor-da-logo-rodape: #EDD983;
     --background-clean: #EBE09B;
-    --button-form:#68D391;
+    --button-form: #68D391;
     --button-form-red: red;
-   
+
 
 }
 
@@ -79,8 +79,8 @@ section#mensagem {
 
 section#input {
     display: flex;
-    padding-top: 2rem;
-    width: 90%;
+    /* padding-top: 2rem;
+    width: 90%; */
     margin: auto;
     align-items: center;
 }
@@ -88,14 +88,14 @@ section#input {
 i.bi-search {
     position: absolute;
     color: (var(--background-bottom));
-    padding-top: .2rem;
-    padding-left: 3rem;
+    padding-top: 1.2rem;
+    padding-left: 4rem;
     font-size: 40px;
 }
 
 #input-text {
     width: 90%;
-    margin: auto;
+    margin: 11px 0 14px 51px;
     font-size: 25px;
     padding: 1.2rem 0 1.2rem;
     padding-left: 4rem;
@@ -111,7 +111,7 @@ section#cards-moedas {
     display: flex;
 }
 
-.card-moeda, .card-moeda-test  {
+.card-moeda, .card-moeda-test {
     display: block;
     margin: 2rem;
     border-radius: 2rem;
@@ -151,7 +151,7 @@ h3.nome-da-ocorrencia {
     justify-content: flex-end;
     font-size: 50px;
     padding: .8rem;
-    
+
 }
 
 
@@ -272,6 +272,19 @@ section#avaliacao:hover {
 }
 
 
+#input {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.input-lupa {
+    display: flex;
+
+}
+
+
+
 
 
 
@@ -301,7 +314,7 @@ section#avaliacao:hover {
     i.bi-search {
         position: absolute;
         margin-right: 2rem;
-        padding-left: 1rem;
+        padding-left: 2rem;
 
     }
 
@@ -309,7 +322,7 @@ section#avaliacao:hover {
         flex-wrap: wrap;
     }
 
-    div.card-moeda, div.card-moeda-test{
+    div.card-moeda, div.card-moeda-test {
         width: 100%;
         justify-content: center;
     }
@@ -359,16 +372,65 @@ section#avaliacao:hover {
         border: 1px #305359 solid;
         border-collapse: collapse;
         text-align: center;
-        font-size: 8px;
+        font-size: 6px;
         font-weight: bold;
     }
 
+    button.botao-remover {
+        font-size: 9px;
+        color: white;
+        margin: 0 auto;
+        padding: 1px;
+        border-radius: 2px;
+        background-color: red;
+        cursor: pointer;
+
+
+
+    }
+
+    #input-text {
+        width: 90%;
+        margin: 2rem 0;
+        font-size: 25px;
+        padding: 1.2rem 0 1.2rem;
+        /* padding-left: 5.2rem; */
+        border: 1mm solid black;
+
+    }
+
+    .modal {
+        width: 50%;
+        height: 50%;
+    }
+
+    .input-lupa {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    #input, button.form-butoom {
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    i.bi-search {
+        font-size: 30px;
+        display: none;
+    }
 
 }
 
 @media (min-width:320px) and (max-width:480px) {
     body {
         width: 100%;
+    }
+
+    #nome-empresa {
+        font-size: 40px
     }
 
     header {
@@ -391,8 +453,8 @@ section#avaliacao:hover {
 
     i.bi-search {
         position: absolute;
-        margin-right: 2rem;
-        padding-left: 1rem;
+        margin-right: 1.9rem;
+
 
     }
 
@@ -400,7 +462,7 @@ section#avaliacao:hover {
         flex-wrap: wrap;
     }
 
- 
+
 
     span#frase-avaliacao {
         display: none;
@@ -415,6 +477,18 @@ section#avaliacao:hover {
     .footer-card a {
         width: 100%;
     }
+
+    input[type=text], input[type=text], input[type=number], input[type=number] {
+        vertical-align: middle;
+
+        background-color: #fff;
+        border: 1px solid #ddd;
+        height: 20px;
+    }
+
+
+
+
 
 }
 
@@ -445,8 +519,6 @@ section#avaliacao:hover {
     i.bi-search {
         position: absolute;
         margin-right: 2rem;
-        padding-left: 1rem;
-
     }
 
     #cards-moedas {
@@ -468,4 +540,15 @@ section#avaliacao:hover {
         width: 100%;
     }
 
+
+    input[type=text], input[type=text], input[type=number], input[type=number] {
+        vertical-align: middle;
+        padding: 10px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+    }
+
+    /* #bi-search{
+
+ } */
 }

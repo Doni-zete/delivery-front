@@ -22,7 +22,7 @@ let diminuir = document.querySelector(".bi-file-minus");
 let botaoComprar = document.querySelector("#butoom-comprar");
 let botaoVender = document.querySelector("#butoom-vender");
 
-let valorMonetarioBase = 131647.49;
+let valorMonetarioBase = 126667.89;
 
 /**
  * Reseta valor do contador
@@ -44,7 +44,7 @@ diminuir.addEventListener("click", function () {
    const valorModificado = modificarValor(OPERACAO.SUBTRAIR);
    formatarValorResultado(valorModificado);
   } else {
-    alert("A quantidade não pode ser inferior a 1");
+  showModal("ATENÇÃO!\n A quantidade não pode ser inferior a 1" );
   }
 });
 
@@ -85,36 +85,23 @@ function formataMonetario(valor) {
 
 
 botaoComprar.addEventListener("click", function () {
-  document.querySelector("#mensagem-sucesso").insertAdjacentHTML(
-    "afterend",
-    `<div class="card-moeda-gren">
-    <span>Compra efetuada com sucesso</span>
-    </div>
-    `
-  );
-  const mensagem = document.querySelector(".card-moeda-gren");
-  setTimeout(() => {
-    mensagem.style.display = "none";
-  }, 1500);
+
+  showModal("Compra efetuada com sucesso!" );
 
   resetarContador();
 });
 
 botaoVender.addEventListener("click", function () {
-  document.querySelector("#mensagem-sucesso").insertAdjacentHTML(
-    "afterend",
-    `<div class="card-moeda-red">
-    <span>Venda efetuada com sucesso</span>
-    </div>
-    `
-  );
-
-  const mensagem = document.querySelector(".card-moeda-red");
-  setTimeout(() => {
-    mensagem.style.display = "none";
-  }, 1500);
+  
+  showModal("Venda efetuada com sucesso!" );
   resetarContador();
 });
+
+
+ //exibir o modal 
+ function showModal(text) {
+  alert(text);
+}
 
 
 function inicializao() {

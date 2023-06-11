@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style-padrao.css">
     <link rel="stylesheet" href="css/mercado.css">
-    
+    <link rel="stylesheet" href="css/modal.css">
+
     <title>Mercado Cripto</title>
 </head>
 
@@ -37,6 +38,13 @@
     <main>
         <section id="conteudo-tabela">
 
+            <div id="modal-pesquisar" class="modal">
+                <div class="modal-content">
+                  <span class="fechar"><i class="bi bi-x-square"></i></span>
+                  <p id="modal-texto"></p>
+                </div>
+              </div>
+
             <h3 class="titulo">FAVORITAS</h3>
 
             <div id="input-centro">
@@ -44,7 +52,9 @@
                 <input type="text" placeholder="Nome da Moeda" id="input-moeda">
                 <input type="number" placeholder="Valor" id="input-valor">
                 <input type="number" placeholder="Porcentagem" id="input-porcentagem">
-    
+            </div>
+
+            <div class="container">
                 <button id="botao-inserir">Inserir </button>
             </div>
 
@@ -54,7 +64,7 @@
                     <th>SIGLA</th>
                     <th>MOEDA</th>
                     <th>PREÇO</th>
-                    <th>STATUS</th>
+                    <th>PORCENTAGEM</th>
                     <th>REMOVER</th>
                 </thead>
 
@@ -166,7 +176,8 @@
         </ul>
     </footer>
 
-    <script src="js/mercado.js"></script>
+    <script src="js/favoritas.js"></script>
+    <script src="js/modal.js"></script>
 
 </body>
 

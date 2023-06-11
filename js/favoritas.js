@@ -13,7 +13,7 @@ botaoInserir.addEventListener("click", function () {
     valorInput === "" ||
     porcentagemInput === "")
     {
-     alert("Você não preencheu os campos: SIGLA ou MOEDA ou VALOR ou PORCENTAGEM. Verifique!");
+      showModal("ATENÇÃO!\nVocê não preencheu os campos: SIGLA ou MOEDA ou VALOR ou PORCENTAGEM.\n Verifique!");
     } 
   else {
     if (!valorInput || Number.isNaN(valorInput)) {
@@ -65,4 +65,8 @@ botoesRemover.forEach(function (botao) {
 
 function formataPreco(preco) {
   return preco.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
+}
+
+function showModal(text) {
+  alert(text);
 }

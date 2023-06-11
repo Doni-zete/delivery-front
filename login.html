@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style-padrao.css">
     <link rel="stylesheet" href="css/cadastrar.css">
+    <link rel="stylesheet" href="css/modal.css">
 
     <title>Login</title>
 </head>
@@ -47,12 +48,19 @@
 
             <section class="container-centro">
 
+                <div id="modal-pesquisar" class="modal">
+                    <div class="modal-content">
+                      <span class="fechar"><i class="bi bi-x-square"></i></span>
+                      <p id="modal-texto"></p>
+                    </div>
+                  </div>
+
                 <div class="formulario-corpo">
                     <h1 class="titulo">LOGIN USUÁRIO</h1>
 
                     <div class="container">
                         <label for="email" class="form-label">E-MAIL</label>
-                        <input type="email" name="email" id="inputEmail" class="form-input">
+                        <input type="email" name="email" id="inputEmail" class="form-input" required>
                     </div>
 
                     <div class="container">
@@ -101,6 +109,7 @@
         </footer>
 
         <script src="js/login.js"></script>
+        <script src="js/modal.js"></script>
 
 </body>
 

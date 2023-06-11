@@ -100,5 +100,7 @@ table, th, td, tr {
     background-color: var(--button-form);
     font-size: 18px;
     text-align: center;
+    color: white;
+    
 
 }
